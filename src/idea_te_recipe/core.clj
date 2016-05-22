@@ -30,37 +30,37 @@
 ;; Input : amount of cod
 ;; Output : pretty print of recipe adjusted
 
-(defn clean [ingredient]
+(defn- clean [ingredient]
   ingredient)
 
-(defn gut [ingredient]
+(defn- gut [ingredient]
   ingredient)
 
-(defn cut [ingredient]
+(defn- cut [ingredient]
   ingredient)
 
-(defn prepare-cod-threading [cod]
+(defn- prepare-cod-threading [cod]
   (-> cod
     clean
     gut
     cut))
 
-(defn prepare-cod [cod]
+(defn- prepare-cod [cod]
   (cut (gut (clean cod))))
 
-(defn heat [ingredient]
+(defn- heat [ingredient]
   ingredient)
 
-(defn cook [ingredients time]
+(defn- cook [ingredients time]
   [ingredients time])
 
-(defn taste [ingredients]
+(defn- taste [ingredients]
   ingredients)
 
-(defn needs-salt? [taste]
+(defn- needs-salt? [taste]
   true)
 
-(defn add-ingredient-to-preparation [ingredient preparation]
+(defn- add-ingredient-to-preparation [ingredient preparation]
     [ingredient preparation])
 
 (defn- transform-ingredients-to-dinner [ingredients]
