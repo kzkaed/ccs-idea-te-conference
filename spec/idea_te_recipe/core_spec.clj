@@ -7,7 +7,5 @@
 (describe "the recipe: "
   (it "cod with green olives returns a dinner"
     (should=
-      ["1 tbsp. chopped flat-leaf parsely"
-       ["Salt"
-        [[["2/3 cup extra virgin olive oil" "2 garlic cloves, minced"] "2/3 cup pitted green olives, chopped"] "2 lbs. cod"]]]
+      ["1 tbsp. chopped flat-leaf parsely" ["Salt" ["2 lbs. cod" ["2/3 cup pitted green olives, chopped" ["2 garlic cloves, minced" "2/3 cup extra virgin olive oil"]]]]]
       (cod-with-green-olives cod olive-oil garlic green-olive parsely salt))))
