@@ -85,3 +85,8 @@
   (let [ingredients [cod olive-oil garlic green-olive parsely salt]
         dinner (transform-ingredients-to-dinner ingredients)]
     dinner))
+
+(defn -main [& args]
+  (println
+    (cod-with-green-olives
+      cod olive-oil garlic green-olive parsely salt)))
