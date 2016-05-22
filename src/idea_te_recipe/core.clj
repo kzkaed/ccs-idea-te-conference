@@ -19,7 +19,16 @@
 (def green-olive "2/3 cup pitted green olives, chopped")
 (def parsely "1 tbsp. chopped flat-leaf parsely")
 (def salt "Salt")
+;; optional part of algorithm How could this element be added?
 (def pan "a pan")
+
+;;Questions - Next Steps
+;; What other data-structures could be used to represent this abstraction
+
+;; Can you write an algorithm that gives a result
+;; that adjusts the recipe, given an amount of cod?
+;; Input : amount of cod
+;; Output : pretty print of recipe adjusted
 
 (defn clean [ingredient]
   ingredient)
@@ -43,7 +52,7 @@
   ingredient)
 
 (defn cook [ingredients time]
-  [time ingredients])
+  [ingredients time])
 
 (defn taste [ingredients]
   ingredients)
