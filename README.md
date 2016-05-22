@@ -26,3 +26,36 @@ prints out the data structure
 ## Testing
 
 To run all (Clojure) tests use `lein spec`. To run them automatically for development, use `lein spec -a` (after running all tests once, this will block and rerun the relevant ones as the code is being modified).
+
+## Recipe
+
+COD WITH GREEN OLIVES - CALABRIA
+
+2 lbs. cod
+
+2/3 cup extra virgin olive oil
+
+2 garlic cloves, minced
+
+2/3 cup pitted green olives, chopped
+
+1 tbsp. chopped flat-leaf parsely
+
+Salt
+
+Clean and gut the cod and cut it in somewhat thick slices. *
+In a pan, heat the olive oil and cook the garlic, then add the olives and cook for 10 minutes *
+Add the fish, and when they are nearly cooked through, taste for salt and springle with parsely.
+Serve immediately.
+
+## Questions and Next Steps
+
+What other data-structures could be used to represent this abstraction?
+
+What further transformations could be made on ingredients?
+
+Can you write an algorithm that gives a result
+that adjusts the recipe, given an amount of cod or other ingredients?
+
+    Input : amount of cod
+    Output : pretty print of recipe adjusted
