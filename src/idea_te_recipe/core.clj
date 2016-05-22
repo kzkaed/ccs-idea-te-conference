@@ -26,7 +26,7 @@
 ;; What other data-structures could be used to represent this abstraction
 
 ;; Can you write an algorithm that gives a result
-;; that adjusts the recipe, given an amount of cod?
+;; that adjusts the recipe, given an amount of cod or other ingedients?
 ;; Input : amount of cod
 ;; Output : pretty print of recipe adjusted
 
@@ -75,11 +75,11 @@
                              (cook green-olive
                                (cook garlic
                                  (heat olive-oil))))
-        taste (taste cooked-preparation)
-        salt-preparation (if (needs-salt? taste)
-                           (add-ingredient-to-preparation salt cooked-preparation))
-        final-prepartion (add-ingredient-to-preparation parsely salt-preparation)]
-final-prepartion))
+        tasted-preparation (if (needs-salt? (taste cooked-preparation))
+                             (add-ingredient-to-preparation salt cooked-preparation)
+                             cooked-preparation)
+        final-preparation (add-ingredient-to-preparation parsely tasted-preparation)]
+    final-preparation))
 
 (defn cod-with-green-olives [cod olive-oil garlic green-olive parsely salt]
   (let [ingredients [cod olive-oil garlic green-olive parsely salt]

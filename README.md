@@ -13,8 +13,7 @@ breaking it down into smaller functions
 
     ingredients [transformation] dinner
 
-## License
+## Set Up
 
-Copyright © 2016 k, LLC.
+Install [Leiningen 2](https://github.com/technomancy/leiningen) if you already haven't. Make sure you have the lein command available in your terminal with `which lein`. Then download the source code with [Git](http://git-scm.com/downloads) by cloning the repository. Now cd into the idea-te-recipe directory.
 
-Distributed under the Eclipse Public License either version 1.0
